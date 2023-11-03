@@ -1,13 +1,14 @@
-name: Windows-CRD
+name: abaso
 
 on: 
+
   workflow_dispatch:
     inputs:
       authcode:
-        description: '& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfJohXnPKwdewmiyV7HLDsNqHLxPA6gWNbmhDAryVAh42GL7XmrvbPN0EW-q02nUX-sfyQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME'
+        description: 'Enter CRD code'
         required: true
       pincode:
-        description: '3115736'
+        description: 'Six digit Pin'
         required: true
   
 jobs:
